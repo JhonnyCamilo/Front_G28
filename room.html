@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesRoom.js"></script>  
+    </head>
+
+    <body>
+        <h1>Room</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="categoria.html">Categoria</a></li>
+            <li><a href="cliente.html">Clientes</a></li>
+            <li><a href="mensajes.html">Mensajes</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+
+        <div>
+            <input type="text" id="name" placeholder="nombre">
+            <input type="number" id="stars" placeholder="estrellas">
+            <input type="text" id="hotel" placeholder="hotel">
+            <input type="text" id="description" placeholder="descripcion">
+            <select id="select-category"> </select>
+        </div>
+
+        <button onclick="postRoom()">
+            Crear Room
+        </button>
+        <script type="text/javascript">
+            window.onload = getRoom_Category();
+        </script>
+
+
+        <script type="text/javascript">
+            window.onload = getRoom();
+        </script>
+
+        <div id="resultado1"></div>
+
+    </body>
+
+</html>
